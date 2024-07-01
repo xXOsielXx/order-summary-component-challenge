@@ -28,7 +28,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: https://github.com/xXOsielXx/order-summary-component-challenge
+- Solution URL: https://www.frontendmentor.io/solutions/responsive-order-summary-card-using-bootstrap-Gx4uD0LxrU
 - Live Site URL: https://xxosielxx.github.io/order-summary-component-challenge
 
 ## My process
