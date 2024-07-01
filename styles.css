@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+/* Primary */
+--pale-blue: hsl(225, 100%, 94%);
+--bright-blue: hsl(245, 75%, 52%);
+
+/* Neutral */
+--very-pale-blue: hsl(225, 100%, 98%);
+--desaturated-blue: hsl(224, 23%, 55%);
+--dark-blue: hsl(223, 47%, 23%);
+}
+
+html {
+    height: 100%;
+    font-size: 16px;
+}
+
+body {
+    min-height: 100%;
+    color: var(--desaturated-blue);
+    font-family: "Red Hat Display", sans-serif;
+    background-color: var(--pale-blue);
+    background-image: url("images/pattern-background-mobile.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top;
+    padding: 64px 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+}
+
+.order-summary-card {
+    width: 100%;
+    max-width: 450px;
+    background-color: var(--very-pale-blue);
+}
+
+.fc-dark-blue {
+    color: var(--dark-blue);
+}
+
+.icon-music {
+    background-image: url("images/icon-music.svg");
+    min-width: 48px;
+    min-height: 48px;
+    border-radius: 50%;
+}
+
+a {
+    color: var(--bright-blue);
+}
+
+#proceed {
+    color: var(--very-pale-blue);
+    background-color: var(--bright-blue);
+}
+
+#cancell {
+    color: inherit;
+    font-size: 0.9rem;
+}
+
+/* Attribution */
+
+.attribution {
+    margin-top: auto;
+    background-color: inherit;
+    text-align: center;
+    padding: 8px;
+    border-radius: 16px;
+    z-index: 0;
+}
+
+.attribution a {
+    text-decoration: none;
+}
+
+/* Media Queries */
+
+@media only screen and (min-width: 600px) {
+    body {
+        background-image: url("images/pattern-background-desktop.svg");
+    }
+
+    #change-plan:hover,
+    #proceed:hover {
+        opacity: 0.7;
+    }
+
+    #cancell:hover {
+        color: var(--dark-blue);
+    }
+}
